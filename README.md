@@ -1,10 +1,16 @@
-# PT-1  Calculator
+# Intro to Ruby
 
-## Explanation
+#### Finish at least 2 of the following challenges 
+
+
+
+### Challenge 1 -  Calculator
+
+### Explanation
 
 - You will be building a calculator which can perform multiple arithmetic operations. Your program should allow the user to choose which operation to perform, enter the values on which the operation is performed, and output the result.
 
-## Specification:
+### Specification:
 
 - A user should be given a menu of operations
 - A user should be able to choose from the menu
@@ -25,213 +31,36 @@
 
 
 
+### Challenge 2 - Reverse a string
 
+Reverse a string in place.  In other words, do not create a new string or use other methods on the string such as reverse.  The goal of the problem is to use a loop and the string accessors to figure out which values to swap for other values.  Below is the output.
 
+```
+Enter a string:
+reverse_me
+em_esrever
+```
 
+### Challenge 3 - Guessing Game
 
-# PT-2 Arrays 
-![ARRAYS](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVWBMdo6Ac3moY3tPnzMsFVnOscOR03SxkZ4sPGGhsWoQrYMPZ9g)
+Create a program that asks the user to guess a number between 1 and 100.  Once the user guesses a number, the program should say, higher, lower, or tell the user that he got the number correct.  The user should continue to make guesses until he guesses correctly.  Also, once the user guesses correctly, the program should print the number of guesses needed to arrive at the correct answer. Below is sample output:
 
-## 1. Return an array of each Student’s full name, upper-cased
-```rb
-students = [
-  {
-      first_name: "Maram",
-      last_name: "AlFawaz"
-  },
-  {
-      first_name: "Abdulaziz",
-      last_name: "Alsaubhi",
-  },
-  {
-      first_name: "Ghadeer",
-      last_name: "Abdulaziz",
-  }
-]
-upper_case_full_names = []
 ```
-### Answer
-```rb
-[ "MARAM ALFAWAZ", "ABDULAZIZ ALSAUBHI", "GHADEER ABDULAZIZ" ]
-```
-## 2. Find the first order for each user
-```rb
-users = [
-  {
-      name: "Hamzah",
-      orders: [
-          {
-              description: "a bmx"
-          }
-      ]
-  },
-  {
-      name: "Edress",
-      orders: [
-          {
-              description: "Kingdom hearts"
-          },
-          {
-              description: "Nintendo 3DS"
-          }
-      ]
-  },
-  {
-      name: "Ziad",
-      orders: [
-          {
-              description: "a Razer Blade"
-          },
-          {
-              description: "The Arrow DVDs"
-          },
-          {
-              description: "airpods"
-          },
-          {
-              description: "a firendly giant lizard"
-          }
-      ]
-  }
-]
-first_order_for_each_user = []
-```
-### Answer
-```rb
-[ {description: "a bmx"}, {description: "Kingdom hearts"}, {description: "a Razer Blade"} ]
-```
-## 3. Find the average amount spent on coffee, per transaction, for each person
-```rb
-people = [
-  {
-      name: "Jawaher",
-      transactions: [
-          {
-              type: "COFFEE",
-              amount: 7.43
-          },
-          {
-              type: "TACOS",
-              amount: 14.65
-          },
-          {
-              type: "COFFEE",
-              amount: 4.43
-          }
-      ]
-  },
-  {
-      name: "Bashayer",
-      transactions: [
-          {
-              type: "BIKES",
-              amount: 800.00
-          },
-          {
-              type: "TACOS",
-              amount: 14.65
-          },
-          {
-              type: "COFFEE",
-              amount: 4.43
-          }
-      ]
-  },
-  {
-      name: "Abdulhameed",
-      transactions: [
-          {
-              type: "COFFEE",
-              amount: 7.43
-          },
-          {
-              type: "COFFEE",
-              amount: 100.00
-          },
-          {
-              type: "COFFEE",
-              amount: 4.43
-          }
-      ]
-  }
-]
-coffee_average_per_person = []
-```
-### Answer
-```rb
-[
-  {name: "Jawaher", :coffee_average=>5.93},
-  {name: "Bashayer", :coffee_average=>4.43},
-  {name: "Abdulhameed", :coffee_average=>37.28666666666667}
-]
-```
-## 4. Find the most expensive product for each store, with the store name:
-```rb
-stores = [
-  {
-      store_name: "Virgin",
-      products: [
-          {
-              description: "PS4",
-              price: 9384.33
-          },
-          {
-              description: "Pen",
-              price: 345.54
-          }
-      ]
-  },
-  {
-      store_name: "Manuel",
-      products: [
-          {
-              description: "Bread",
-              price: 654.44
-          },
-          {
-              description: "Cheese",
-              price: 323.43
-          }
-      ]
-  },
-  {
-      store_name: "Noon",
-      products: [
-          {
-              description: "iPhone",
-              price: 345.43
-          },
-          {
-              description: "TV",
-              price: 899.33
-          }
-      ]
-  }
-]
-most_expensive_products_by_store = []
-```
-### Answer
-```rb
-[
-  {store_name: "Virgin", most_expensive_product: { description: "PS4", price: 9384.33}},
-  {store_name: "Manuel", most_expensive_product: { description: "Bread", price: 654.44}},
-  {store_name: "Noon", most_expensive_product: { description: "TV", price: 899.33}}
-]
-```
-# Bonus
-Write an infinite loop that will make you add all the your friends in the students list and after each add will ask if you want to quit the loop (yes/no) if the user choose no print all the students array
-
-### Answer
-```
->add a student
-Mohammad Aljagthmi
->Do you want to continue ? (y/n)
-y
->add a student
-Ola Alyamani
->Do you want to continue ? (y/n)
-y
->add a student
+Guess a number between 1 and 100
+50
+The number is lower than 50.  Guess again
+25
+The number is lower than 25.  Guess again
+13
+The number is higher than 13.  Guess again
+20
+The number is lower than 20.  Guess again
+17
+The number is higher than 17.  Guess again
+18
+The number is higher than 18.  Guess again
+19
+You got it in 7 tries
 ```
 
 ---
@@ -243,3 +72,4 @@ Your opinion for this homework is very important! Please fill up the following q
  * What was a challenge you had with this assignment?
  * Is there anything that you'd like some further information on?
  * Do you have any suggestions to improve this assignment?
+
