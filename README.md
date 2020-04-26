@@ -28,7 +28,7 @@
 - Advanced Calculator functionality
 - Calculator should be able to do complex arithmetic (exponents, square roots, etc.)
 
-
+_______
 
 
 ### Challenge 2 - Reverse a string
@@ -40,6 +40,7 @@ Enter a string:
 reverse_me
 em_esrever
 ```
+_______
 
 ### Challenge 3 - Guessing Game
 
