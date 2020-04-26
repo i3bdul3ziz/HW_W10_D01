@@ -71,9 +71,10 @@ puts "Enter your name: "
 name = gets.chomp
 puts "Hello #{name}, how are you"
 ```
+## Reminder
 ```
 
-## Reminder
+
 Pull request questions ! :
  * on a scale from 1 to 5, how comfortable were you with this assignment?
  * How long did it take?
