@@ -64,7 +64,7 @@ The number is higher than 18.  Guess again
 You got it in 7 tries
 ```
 
-hint 
+## hint 
 The code for accepting user input is actually not that much more complex than the code for printing. In Ruby, we can get user input like this
 ``` 
 puts "Enter your name: "
